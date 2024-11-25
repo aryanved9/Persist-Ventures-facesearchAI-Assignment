@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../assets/second.jpg";
+import aboutimg from "../assets/third.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
@@ -8,7 +8,7 @@ function About() {
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-gray-900 text-4xl"
       >
@@ -19,7 +19,7 @@ function About() {
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center">
@@ -33,7 +33,7 @@ function About() {
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1}}
           className="w-full lg:w-1/2"
         >
           <div className="flex justify-center lg:justify-start">
